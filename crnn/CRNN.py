@@ -28,6 +28,7 @@ class CRNNHandle():
         else:
             self.device = torch.device("cpu")
         self.net = torch.load(model_path, map_location=self.device)
+        
         print('device:', self.device)
 
         if net is not None:
@@ -49,7 +50,7 @@ class CRNNHandle():
             self.net = net
             print('load model')
         self.net.eval()
-
+        print('Net BaseBone:\n', self.net )
 
 
     def predict(self, im):
