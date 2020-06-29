@@ -51,11 +51,8 @@ for img_path in imgs:
     image = cv2.resize(image, (480, 480))
     image = image / 255.0
     # image = cv2.resize(image, (640, 480))
-
-    # mean = np.array([0.40789654, 0.44719302, 0.47026115],
-    #                 dtype=np.float32).reshape(1, 1, 3)
-    # std = np.array([0.28863828, 0.27408164, 0.27809835],
-    #                dtype=np.float32).reshape(1, 1, 3)
+    # mean = np.array([0.40789654, 0.44719302, 0.47026115], dtype=np.float32).reshape(1, 1, 3)
+    # std = np.array([0.28863828, 0.27408164, 0.27809835], dtype=np.float32).reshape(1, 1, 3)
 
     # print(image)
 
