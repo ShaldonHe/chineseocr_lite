@@ -3,7 +3,7 @@ This code uses the onnx model to detect faces from live video or cameras.
 """
 import os,sys
 sys.path.insert(0,"..")
-from pse import  decode
+from pse import decode
 import time
 
 import cv2
